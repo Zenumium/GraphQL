@@ -361,7 +361,7 @@ function createUserSection(user) {
     divxp.className = 'divxp';
     
     const lvl = document.createElement('div');
-    lvl.textContent = `Level: ${user.lvl}`;
+    lvl.textContent = `Current rank: ${user.lvl}`;
     divxp.appendChild(lvl);
 
     const totalXP = document.createElement('div');
@@ -430,8 +430,8 @@ function createFooter() {
 // Utility functions
 function formatXP(xpAmount) {
     return xpAmount >= 1000000 
-        ? `XP total: ${(xpAmount / 1000000).toFixed(2)} Mb` 
-        : `XP total: ${Math.round(xpAmount / 1000)} kb`;
+        ? `XP GlobalXP: ${(xpAmount / 1000000).toFixed(2)} Mb` 
+        : `XP GlobalXP: ${Math.round(xpAmount / 1000)} kb`;
 }
 
 function createAuditRatioSVG(XPup, XPdown) {
@@ -439,7 +439,7 @@ function createAuditRatioSVG(XPup, XPdown) {
     
     const [traceXPup, traceXPdown] = calculateAuditRatioTraces(XPup, XPdown);
 
-    const lineDone = createSVGLine(0, 5, traceXPup * 100, 5, 'white');
+    const lineDone = createSVGLine(0, 5, traceXPup * 100, 5, 'black');
     const lineReceived = createSVGLine(0, 30, traceXPdown * 100, 30, 'red');
 
     svgAudit.appendChild(lineDone);
