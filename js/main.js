@@ -430,8 +430,8 @@ function createFooter() {
 // Utility functions
 function formatXP(xpAmount) {
     return xpAmount >= 1000000 
-        ? `XP GlobalXP: ${(xpAmount / 1000000).toFixed(2)} Mb` 
-        : `XP GlobalXP: ${Math.round(xpAmount / 1000)} kb`;
+        ? `Global XP: ${(xpAmount / 1000000).toFixed(2)} Mb` 
+        : `: ${Math.round(xpAmount / 1000)} kb`;
 }
 
 function createAuditRatioSVG(XPup, XPdown) {
@@ -439,7 +439,7 @@ function createAuditRatioSVG(XPup, XPdown) {
     
     const [traceXPup, traceXPdown] = calculateAuditRatioTraces(XPup, XPdown);
 
-    const lineDone = createSVGLine(0, 5, traceXPup * 100, 5, 'black');
+    const lineDone = createSVGLine(0, 5, traceXPup * 100, 5, 'white');
     const lineReceived = createSVGLine(0, 30, traceXPdown * 100, 30, 'red');
 
     svgAudit.appendChild(lineDone);
