@@ -430,7 +430,7 @@ function createFooter() {
 // Utility functions
 function formatXP(xpAmount) {
     return xpAmount >= 1000000 
-        ? `Global XP: ${(xpAmount / 1000000).toFixed(2)} Mb` 
+        ? `: ${(xpAmount / 1000000).toFixed(2)} Mb` 
         : `: ${Math.round(xpAmount / 1000)} kb`;
 }
 
