@@ -3,6 +3,7 @@ h3, h4, h5, h6, div{
   font-family: 'Pixel.ttf';
   font-weight: 700;
   color: #ffffff;
+  gap: 30px;
 }
 
 h3,
