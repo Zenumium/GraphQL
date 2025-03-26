@@ -1,0 +1,13 @@
+.welcomeMessage {
+    font-size: 40px;
+    animation: disappear 5s forwards;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

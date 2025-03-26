@@ -1,0 +1,19 @@
+.logout {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    font-size: 40px;
+    color: white;
+    border: 3px gray solid;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.logout:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 3px white;
+}
