@@ -139,7 +139,7 @@ function handleLoginResponse(response) {
     const divError = document.getElementById('divError');
     
     if (!response.ok) {
-        divError.textContent = response.status === 401 
+        divError.textContent = response.status === 401 // TODO : better error handle
             ? 'Username or password incorrect' 
             : `Error code: ${response.status}`;
         
@@ -303,7 +303,7 @@ function updateDashboard(user) {
     container.innerHTML = '';
 
     // Welcome message
-    const welcomeMessage = createWelcomeMessage(user.firstName + user.lastName);
+    const welcomeMessage = createWelcomeMessage(user.firstName + user.lastName); // works with user.lastName
     container.appendChild(welcomeMessage);
 
     // User information section
