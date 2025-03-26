@@ -432,7 +432,6 @@ function formatXP(xpAmount) {
     return xpAmount >= 1000000 
     ? `: ${(xpAmount / 1000000).toFixed(2)} Mb`  
     : ` Global XP : ${Math.round(xpAmount / 1000)} kb`;
-    
 }
 
 function createAuditRatioSVG(XPup, XPdown) {
