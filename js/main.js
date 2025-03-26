@@ -95,7 +95,7 @@ function createLoginContainer() {
 
     // Login image
     const imgLogin = document.createElement('img');
-    imgLogin.src = '/images/image login.webp';
+    imgLogin.src = './images/image login.webp';
     imgLogin.alt = 'Login Image';
     imgLogin.className = 'imgLogin';
     divConnexion.appendChild(imgLogin);
