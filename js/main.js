@@ -303,7 +303,7 @@ function updateDashboard(user) {
     container.innerHTML = '';
 
     // Welcome message
-    const welcomeMessage = createWelcomeMessage(user.firstName);
+    const welcomeMessage = createWelcomeMessage(user.firstName + user.lastName);
     container.appendChild(welcomeMessage);
 
     // User information section
