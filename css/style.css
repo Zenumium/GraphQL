@@ -28,8 +28,8 @@ body {
 }
 
 .divError {
-    left: -465px;
-    top: 589px;
+    left: -215px;
+    top: 367px;
     position: absolute;
     font-family: 'Pixel.ttf';
     width: 80%;
@@ -42,7 +42,7 @@ body {
 }
 
 .divConnexion {
-    bottom: 400px;
+    bottom: 260px;
     position: absolute;
     left: 100px;
     gap: 50px;
@@ -141,6 +141,7 @@ transition: background-color 0.3s; /* Added transition for hover effect */
     cursor: default;
 }
 .divxp {
+    width: 35%;
     top: 200px;
     left: 0;
     flex-direction: row;
@@ -159,7 +160,7 @@ transition: background-color 0.3s; /* Added transition for hover effect */
 .divaudit {
     width: 25%;
     position: absolute;
-    top: 300px;
+    top: 340px;
     left: 0;
     background-color: black;
     font-size: 40px;
@@ -194,7 +195,7 @@ transition: background-color 0.3s; /* Added transition for hover effect */
 }
 
 .divgraph {
-    right: 80px;
+    right: 0px;
     top: 100px;
     position: absolute;
     width: 60%;
